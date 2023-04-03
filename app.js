@@ -5,7 +5,7 @@ const usuario = require('./usuario');
 // get para as informações do usuario
 app.get('/', (req, res, next) => {
     res.status(200).send({
-        mensagem: usuario.nome + " " + usuario.cpf + " " + usuario.data_nascimento
+        mensagem: "nome: " + usuario.nome + "   cpf: " + usuario.cpf + "   data de nascimento: " + usuario.data_nascimento
     })
 });
 
